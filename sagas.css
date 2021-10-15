@@ -1,0 +1,42 @@
+
+.page {
+    overflow-y: scroll;
+}
+
+.container {
+    position: absolute;
+    z-index: 1;
+
+    display: grid;
+
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 100px auto;
+
+    grid-template-areas: "nav ."
+                        "sagas sagas";
+
+    width: 100%;
+    height: auto;
+
+}
+
+.sagas {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    margin-inline: 20px;
+    grid-area: sagas;
+    height: auto;
+}
+
+.saga {
+    height: 150px;
+}
+
+.saga img{
+    width: 250px;
+    height: 150px;
+}
